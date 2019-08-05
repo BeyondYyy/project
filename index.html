@@ -1,0 +1,3248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>渔美人商城</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<script src="../jquery.1.12.4.js"></script>
+<script src="jquery.banner.2.0.0.js"></script>
+<script src="js/banner.js"></script>
+<body>
+<!-- top -->
+    <div id="top">
+        <div class="margin">
+            <h3><span>★</span>渔具专卖 特价户外用品</h3>
+            <p>您好,游客 [<a href="">登陆</a>] [<a href="">注册</a>] <span>|</span><a href="">公告</a><span>|</span><a href="">手机版</a></p>
+        </div>
+    </div>
+
+<!-- header -->
+    <header class="margin">
+        <div class="logo">
+            <a href=""><img src="./images/logo.png" /></a>
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" class="txt" value="搜索商品 |">
+                <input type="submit" class="sub" value="搜索">
+            </form>
+            <p>
+                <b>热门搜索:</b>
+                <a href="">台钓</a>
+                <a href="">野钓</a>
+                <a href="">路亚</a>
+                <a href="">海钓</a>
+                <a href="">矶钓</a>
+            </p>
+        </div>
+        <div class="add">
+            <dl class="left">
+                <dt>
+                    <i class="my bg"></i>
+                    <a href="">我的渔美人</a>
+                    <i class="xia bg"></i>
+                </dt>
+                <dd>
+                    <p>您好,游客</p>
+                    <div class="bot">
+                        <ul class="left">
+                            <li><a href="">我的订单</a></li>
+                            <li><a href="">我的团购</a></li>
+                            <li><a href="">我的咨询</a></li>
+                        </ul>
+                        <div class="line"></div>
+                        <ul class="right">
+                            <li><a href="">我的收藏</a></li>
+                            <li><a href="">我的地址</a></li>
+                            <li><a href="">我的优惠券</a></li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="right">
+                <dt>
+                    <i class="che bg"></i>
+                    <em>0</em>
+                    <a href="">购物车</a>
+                    <i class="rig bg"></i>
+                </dt>
+                <dd>
+                    <i class="zzz bg"></i>
+                    <span>购物车中还没有商品,赶紧选购吧!</span>
+                </dd>
+            </dl>
+            <script>
+                $("dl.left").find("dt").hover(function(){
+                    $(this).css({
+                        background:"#fff",
+                    }).siblings().css({
+                        display:"block",
+                        borderTop:0,
+                        zIndex:999                       
+                    }).siblings()
+                    .css({
+                        border:"#efefef 1px solid"
+                    })
+                    .find(".my").css({
+                        backgroundPosition:"-121px -60px",
+                    })
+                },function(){
+                    $(this).css("background","#f7f7f7").siblings().css({
+                        display:"none",
+                        border:"#efefef 1px solid",
+                    }).siblings()
+                    .css({
+                        border:"#efefef 1px solid"
+                    })
+                    .find(".my").css({
+                        backgroundPosition:"-121px -30px"
+                    })
+                })
+                $("dl.right").find("dt").hover(function(){
+                    $(this).css({
+                        borderBottom:0,
+                        background:"#fff"
+                    }).siblings().css({
+                        display:"block",
+                        boderTop:0,
+                        zIndex:999
+                    }).siblings()
+                    .css({
+                        border:"#efefef 1px solid"
+                    })
+                    .find(".che").css({
+                        backgroundPosition:"-121px -120px"
+                    })
+                },function(){
+                    $(this).css("background","#f7f7f7").siblings().css({
+                        border:"#efefef 1px solid",
+                        display:"none"
+                    }).siblings()
+                    .find(".che").css({
+                        backgroundPosition:"-121px -90px"
+                    })
+                })
+            </script>
+        </div>
+    </header>
+
+<!-- nav -->
+    <nav class="margin">
+        <dl>
+            <dt>分类</dt>
+            <dd>
+                <a href="">鱼竿</a>
+                <i class="bg"></i>
+                <div class="box">
+                    <p class="p1">
+                        <a href="">台钓竿</a>
+                        <span>|</span>
+                        <a href="">鲤竿</a>
+                        <span>|</span>
+                        <a href="">综合竿</a>
+                        <span>|</span>
+                        <a href="">罗飞竿</a>
+                        <span>|</span>
+                        <a href="">鲫竿</a>
+                        <span>|</span>
+                        <a href="">并继竿</a>
+                    </p>
+                    <p class="p2">
+                        <a href="">手竿</a>
+                        <span>|</span>
+                        <a href="">短节竿</a>
+                        <span>|</span>
+                        <a href="">长竿</a>
+                    </p>
+                    <p class="p3">
+                        <a href="">路亚竿</a>
+                        <span>|</span>
+                        <a href="">万能路亚竿</a>
+                        <span>|</span>
+                        <a href="">鲈鱼竿</a>
+                        <span>|</span>
+                        <a href="">翘嘴竿</a>
+                        <span>|</span>
+                        <a href="">雷强竿</a>
+                        <span>|</span>
+                        <a href="">飞蝇竿</a>
+                        <span>|</span>
+                        <a href="">海鲈竿</a>
+                        <span>|</span>
+                        <a href="">铁板竿</a>
+                    </p>
+                    <p class="p4">
+                        <a href="">海竿</a>
+                        <span>|</span>
+                        <a href="">小海竿</a>
+                        <span>|</span>
+                        <a href="">远投竿</a>
+                    </p>
+                    <p class="p5">
+                        <a href="">矶竿</a>
+                    </p>
+                    <p class="p6">
+                        <a href="">前打竿</a>
+                    </p>
+                    <p class="p7">
+                        <a href="">船竿</a>
+                    </p>
+                    <p class="p8">
+                        <a href="">筏竿</a>
+                    </p>
+                </div>
+            </dd>
+            <dd>
+                <a href="">鱼线</a>
+                <i class="bg"></i>
+                <div class="box">
+                        <p class="p1">
+                            <a href="">尼龙线</a>
+                            <span>|</span>
+                            <a href="">台钓线</a>
+                            <span>|</span>
+                            <a href="">路亚线</a>
+                        </p>
+                        <p class="p2">
+                            <a href="">大马力</a>
+                        </p>
+                        <p class="p3">
+                            <a href="">碳线</a>
+                        </p>
+                        <p class="p4">
+                            <a href="">前导线</a>
+                        </p>
+                    </div>
+            </dd>
+            <dd>
+                <a href="">鱼轮</a>
+                <i class="bg"></i>
+                <div class="box">
+                        <p class="p1">
+                            <a href="">纺车轮</a>
+                        </p>
+                        <p class="p2">
+                            <a href="">水滴轮</a>
+                        </p>
+                        <p class="p3">
+                            <a href="">鼓轮</a>
+                        </p>
+                        <p class="p4">
+                            <a href="">筏轮</a>
+                        </p>
+                        <p class="p5">
+                            <a href="">前打轮</a>
+                        </p>
+                        <p class="p6">
+                            <a href="">渔轮配件</a>
+                        </p>
+                    </div>
+            </dd>
+            <dd>
+                <a href="">鱼钩</a>
+                <i class="bg"></i>
+                <div class="box">
+                        <p class="p1">
+                            <a href="">台钓钩</a>
+                            <span>|</span>
+                            <a href="">袖钩</a>
+                            <span>|</span>
+                            <a href="">关东钩</a>
+                            <span>|</span>
+                            <a href="">伊豆钩</a>
+                            <span>|</span>
+                            <a href="">伊势尼</a>
+                            <span>|</span>
+                            <a href="">千又钩</a>
+                            <span>|</span>
+                            <a href="">丸世钩</a>
+                            <span>|</span>
+                            <a href="">台钓线组</a>
+                        </p>
+                        <p class="p2">
+                            <a href="">路亚钩</a>
+                            <span>|</span>
+                            <a href="">曲柄钩</a>
+                            <span>|</span>
+                            <a href="">飞蝇钩</a>
+                            <span>|</span>
+                            <a href="">海钓钩</a>
+                            <span>|</span>
+                            <a href="">铅头钩</a>
+                        </p>
+                        <p class="p3">
+                            <a href="">爆炸钩</a>
+                        </p>
+                    </div>
+            </dd>
+            <dd>
+                <a href="">鱼漂</a>
+                <i class="bg"></i>
+                <div class="box">
+                        <p class="p1">
+                            <a href="">台钓漂</a>
+                            <span>|</span>
+                            <a href="">芦苇漂</a>
+                            <span>|</span>
+                            <a href="">巴尔衫木</a>
+                            <span>|</span>
+                            <a href="">纳米漂</a>
+                            <span>|</span>
+                            <a href="">七星漂</a>
+                        </p>
+                        <p class="p2">
+                            <a href="">夜光漂</a>
+                        </p>
+                        <p class="p3">
+                            <a href="">阿波漂</a>
+                        </p>
+                    </div>
+            </dd>
+            <dd>
+                <a href="">鱼饵</a>
+                <i class="bg"></i>
+                <div class="box">
+                    <p class="p1">
+                        <a href="">商品饵</a>
+                        <span>|</span>
+                        <a href="">鲫鱼饵</a>
+                        <span>|</span>
+                        <a href="">鲤鱼饵</a>
+                        <span>|</span>
+                        <a href="">草鱼饵</a>
+                        <span>|</span>
+                        <a href="">鲢鳙饵</a>
+                        <span>|</span>
+                        <a href="">综合饵</a>
+                        <span>|</span>
+                        <a href="">状态饵</a>
+                        <span>|</span>
+                        <a href="">窝料</a>
+                    </p>
+                    <p class="p2">
+                        <a href="">小药</a>
+                    </p>
+                    <p class="p3">
+                        <a href="">软饵</a>
+                        <span>|</span>
+                        <a href="">软虫</a>
+                        <span>|</span>
+                        <a href="">雷蛙</a>
+                        <span>|</span>
+                        <a href="">假鱿鱼</a>
+                    </p>
+                    <p class="p4">
+                        <a href="">硬饵</a>
+                        <span>|</span>
+                        <a href="">亮片</a>
+                        <span>|</span>
+                        <a href="">米诺</a>
+                        <span>|</span>
+                        <a href="">爬波</a>
+                        <span>|</span>
+                        <a href="">铅笔</a>
+                        <span>|</span>
+                        <a href="">VIB</a>
+                        <span>|</span>
+                        <a href="">胡须佬</a>
+                        <span>|</span>
+                        <a href="">铁板饵</a>
+                    </p>
+                    <p class="p5">
+                        <a href="">矶竿</a>
+                    </p>
+                </div>
+            </dd>
+            <dd>
+                <a href="">配件</a>
+                <i class="bg"></i>
+                <div class="box">
+                        <p class="p1">
+                            <a href="">鱼竿配件</a>
+                            <span>|</span>
+                            <a href="">铃铛</a>
+                            <span>|</span>
+                            <a href="">竿止</a>
+                            <span>|</span>
+                            <a href="">失手绳</a>
+                            <span>|</span>
+                            <a href="">导环</a>
+                            <span>|</span>
+                            <a href="">竿稍绳</a>
+                        </p>
+                        <p class="p2">
+                            <a href="">线组配件</a>
+                            <span>|</span>
+                            <a href="">八字环</a>
+                            <span>|</span>
+                            <a href="">转换别针</a>
+                            <span>|</span>
+                            <a href="">太空豆</a>
+                            <span>|</span>
+                            <a href="">铅坠</a>
+                            <span>|</span>
+                            <a href="">铅皮座</a>
+                            <span>|</span>
+                            <a href="">绕线板</a>
+                            <span>|</span>
+                            <a href="">诱饵笼</a>
+                        </p>
+                        <p class="p3">
+                            <a href="">浮标配件</a>
+                            <span>|</span>
+                            <a href="">漂座</a>
+                            <span>|</span>
+                            <a href="">棉线结</a>
+                            <span>|</span>
+                            <a href="">卡拉棒</a>
+                            <span>|</span>
+                            <a href="">挡豆</a>
+                            <span>|</span>
+                            <a href="">荧光棒</a>
+                        </p>
+                        <p class="p4">
+                            <a href="">渔具盒</a>
+                            <span>|</span>
+                            <a href="">主线盒</a>
+                            <span>|</span>
+                            <a href="">浮漂盒</a>
+                            <span>|</span>
+                            <a href="">配件盒</a>
+                            <span>|</span>
+                            <a href="">路亚盒</a>
+                        </p>
+            </dd>
+            <dd>
+                <a href="">装备</a>
+                <i class="bg"></i>
+                <div class="box">
+                    <p class="p1">
+                        <a href="">钓箱</a>
+                    </p>
+                    <p class="p2">
+                        <a href="">钓箱配件</a>
+                        <span>|</span>
+                        <a href="">三件套</a>
+                        <span>|</span>
+                        <a href="">拉饵盘</a>
+                        <span>|</span>
+                        <a href="">氧气泵</a>
+                        <span>|</span>
+                        <a href="">钓椅配件</a>
+                    </p>
+                    <p class="p3">
+                        <a href="">支架</a>
+                        <span>|</span>
+                        <a href="">手竿架</a>
+                        <span>|</span>
+                        <a href="">海竿架</a>
+                        <span>|</span>
+                        <a href="">船筏竿架</a>
+                        <span>|</span>
+                        <a href="">炮台</a>
+                        <span>|</span>
+                        <a href="">伞架</a>
+                        <span>|</span>
+                        <a href="">灯架</a>
+                        <span>|</span>
+                        <a href="">饵盘架</a>
+                    </p>
+                    <p class="p4">
+                        <a href="">渔具包</a>
+                    </p>
+                    <p class="p5">
+                        <a href="">钓椅</a>
+                    </p>
+                    <p class="p6">
+                        <a href="">钓台</a>
+                    </p>
+                    <p class="p7">
+                        <a href="">鱼护</a>
+                    </p>
+                    <p class="p8">
+                        <a href="">抄网</a>
+                    </p>
+                    <p class="p9">
+                        <a href="">钓鱼桶</a>
+                    </p>
+                    <p class="p10">
+                        <a href="">太阳伞</a>
+                    </p>
+                </div>
+            </dd>
+            <dd>
+                <a href="">工具</a>
+                <i class="bg"></i>
+                <div class="box">
+                    <p class="p1">
+                        <a href="">照明</a>
+                        <span>|</span>
+                        <a href="">手电筒</a>
+                        <span>|</span>
+                        <a href="">夜钓灯</a>
+                        <span>|</span>
+                        <a href="">头灯</a>
+                        <span>|</span>
+                        <a href="">探照灯</a>
+                        <span>|</span>
+                        <a href="">野营灯</a>
+                        <span>|</span>
+                        <a href="">锂电池</a>
+                        <span>|</span>
+                        <a href="">充电器</a>
+                        <span>|</span>
+                        <a href="">太阳能灯</a>
+                    </p>
+                    <p class="p2">
+                        <a href="">探鱼器</a>
+                    </p>
+                    <p class="p3">
+                        <a href="">打窝船</a>
+                    </p>
+                    <p class="p4">
+                        <a href="">控鱼器</a>
+                    </p>
+                    <p class="p5">
+                        <a href="">路亚钳</a>
+                    </p>
+                    <p class="p6">
+                        <a href="">绑钩器</a>
+                    </p>
+                    <p class="p7">
+                        <a href="">脱钩器</a>
+                    </p>
+                    <p class="p8">
+                        <a href="">剪刀</a>
+                    </p>
+                    <p class="p9">
+                        <a href="">肚顶</a>
+                    </p>
+                    <p class="p10">
+                        <a href="">黄鳝钓具</a>
+                    </p>
+                    <p class="p11">
+                        <a href="">辅助工具</a>
+                    </p>
+                </div>
+            </dd>
+            <dd>
+                <a href="">服装</a>
+                <i class="bg"></i>
+                <div class="box">
+                    <p class="p1">
+                        <a href="">冲锋衣</a>
+                    </p>
+                    <p class="p2">
+                        <a href="">救生衣</a>
+                    </p>
+                    <p class="p3">
+                        <a href="">防晒衣</a>
+                    </p>
+                    <p class="p4">
+                        <a href="">太阳帽</a>
+                    </p>
+                    <p class="p5">
+                        <a href="">速干衣</a>
+                    </p>
+                    <p class="p6">
+                        <a href="">雨衣</a>
+                    </p>
+                    <p class="p7">
+                        <a href="">下水裤</a>
+                    </p>
+                    <p class="p8">
+                        <a href="">手套</a>
+                    </p>
+                    <p class="p9">
+                        <a href="">眼镜</a>
+                    </p>
+                    <p class="p10">
+                        <a href="">手表</a>
+                    </p>
+                </div>
+            </dd>
+            <dd>
+                <a href="">户外</a>
+                <i class="bg"></i>
+                <div class="box">
+                    <p class="p1">
+                        <a href="">帐篷</a>
+                        <span>|</span>
+                        <a href="">单层账</a>
+                        <span>|</span>
+                        <a href="">双层账</a>
+                        <span>|</span>
+                        <a href="">天幕</a>
+                        <span>|</span>
+                        <a href="">帐篷配件</a>
+                    </p>
+                    <p class="p2">
+                        <a href="">防潮垫</a>
+                    </p>
+                    <p class="p3">
+                        <a href="">睡袋</a>
+                    </p>
+                    <p class="p4">
+                        <a href="">充气枕</a>
+                    </p>
+                    <p class="p5">
+                        <a href="">吊床</a>
+                    </p>
+                    <p class="p6">
+                        <a href="">折叠床</a>
+                    </p>
+                    <p class="p7">
+                        <a href="">休闲包</a>
+                    </p>
+                    <p class="p8">
+                        <a href="">烧烤</a>
+                        <span>|</span>
+                        <a href="">烤炉</a>
+                        <span>|</span>
+                        <a href="">木炭</a>
+                        <span>|</span>
+                        <a href="">烤网</a>
+                        <span>|</span>
+                        <a href="">烧烤配件
+                        </a>
+                    </p>
+                    <p class="p9">
+                        <a href="">炊具</a>
+                        <span>|</span>
+                        <a href="">炉具</a>
+                        <span>|</span>
+                        <a href="">厨具</a>
+                    </p>
+                    <p class="p10">
+                        <a href="">工兵铲</a>
+                    </p>
+                </div>
+            </dd>
+            <dd>
+                <a href="">渔网</a>
+                <i class="bg"></i>
+                <div class="box">
+                        <p class="p2">
+                                <a href="">撒网</a>
+                            </p>
+                            <p class="p3">
+                                <a href="">粘网</a>
+                            </p>
+                            <p class="p4">
+                                <a href="">地笼</a>
+                            </p>
+                </div>
+            </dd>
+        </dl>
+        <ul>
+            <li><a href="">首页</a></li>
+            <li><a href="">鱼竿</a></li>
+            <li><a href="">鱼线</a></li>
+            <li><a href="">鱼轮</a></li>
+            <li><a href="">鱼钩</a></li>
+            <li><a href="">鱼漂</a></li>
+            <li><a href="">鱼饵</a></li>
+            <li><a href="">配件</a></li>
+            <li><a href="">特价</a></li>
+            <li><a href="">优惠券</a></li>
+        </ul>
+        <script>
+            $("nav").find("dd").hover(function(){
+                $(this).css({
+                    
+                    // borderBottom:"1px #f7f7f7 solid",
+                    background:"#fff",
+                    boxShadow:"0 0 10px #999"
+                }).find(".box").css({
+                    display:"block"
+                })
+            },function(){
+                $(this).css({
+                    boxShadow:"none"
+                }).find(".box").css({
+                    display:"none"
+                })
+            })
+        </script>
+    </nav>
+
+<!-- banner -->
+    <section id="banner" class="margin">
+        <div class="center">
+            <div class="c-t banner1">
+                <a href="" class="b1">
+                    <img src="images/banner1.jpg" alt="">
+                    <img src="images/banner2.jpg" alt="">
+                    <img src="images/banner3.jpg" alt="">
+                    <img src="images/banner4.jpg" alt="">
+                </a>
+            </div>
+            <div class="c-b">
+                <div class="box banner2">
+                    <a href="" class="b2">
+                        <img src="images/b1.jpg" /><img src="images/b2.jpg" /><img src="images/b3.jpg" />
+                    </a>
+                    <a href="">
+                        <img src="images/b4.jpg" /><img src="images/b5.jpg" /><img src="images/b6.jpg" />
+                    </a>
+                    <a href="">
+                        <img src="images/b7.jpg" /><img src="images/b8.jpg" /><img src="images/b9.jpg" />
+                    </a>                   
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="r-t">
+                <a href="">
+                    <h3>货真价实 一拍即发</h3>
+                    <h4>手机商城 微商城 任您挑</h4>
+                    <h5>商城快讯</h5>
+                </a>
+            </div>
+            <div class="r-c">
+                <ul class="u1">
+                    <li><a href="">2019春节暂停发货</a></li>
+                    <li><a href="">网站又升级啦</a></li>
+                    <li><a href="">让您无本万利</a></li>
+                    <li><a href="">2018年底促销</a></li>
+                </ul>
+                <div class="line"></div>
+                <ul class="u2">
+                    <li><a href="">关于最低订货金额</a></li>
+                    <li><a href="">2018春节放假安排</a></li>
+                    <li><a href="">网站最新升级</a></li>
+                    <li><a href="">2019国庆假期通知</a></li>
+                </ul>
+            </div>
+            <div class="r-b"><img src="images/wo.jpg" alt=""></div>
+        </div>
+    </section>
+
+<!-- main -->
+    <main class="margin">
+        <div class="show">
+            <div class="title">
+                <b>人气商品</b>
+                <span>正品特价</span>
+            </div>
+            <div class="photo1">
+                <ul>
+                    <li><a href=""><img src="images/show1.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/show2.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/show3.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/show4.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/show5.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/show6.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/show7.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/show8.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <script>
+                $(".photo1").find("img").hover(function(){
+                    $(this).stop().animate({
+                        left:"-10px"
+                    })},function(){
+                        $(this).stop().animate({
+                            left:0
+                        })
+                    })
+            </script>
+            <div class="photo2">
+                <ul>
+                    <li><a href=""><img src="images/show-1.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/show-2.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/show-3.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="new">
+                <h3>最新上架</h3>
+                <div class="box">
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/new1.jpg" alt=""></a>
+                        </dt>
+                        <dd>￥28.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/new2.jpg" alt=""></a>
+                        </dt>
+                        <dd>￥68.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/new3.jpg" alt=""></a>
+                        </dt>
+                        <dd>￥88.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/new4.jpg" alt=""></a>
+                        </dt>
+                        <dd>￥18.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/new5.jpg" alt=""></a>
+                        </dt>
+                        <dd>￥38.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/new6.jpg" alt=""></a>
+                        </dt>
+                        <dd>￥388.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/new7.jpg" alt=""></a>
+                        </dt>
+                        <dd>￥18.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/new8.jpg" alt=""></a>
+                        </dt>
+                        <dd>￥8.00</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="Floor">
+            <div class="F1 floor">
+                <div class="left">
+                    <div class="l-t">
+                        <img src="images/f1.jpg" alt="1F">
+                        <b>钓鱼竿</b>
+                    </div>
+                    <div class="l-m">
+                        <ul class="u1">
+                            <li><a href="">台钓竿</a></li>
+                            <li><a href="">路亚竿</a></li>
+                            <li><a href="">矶竿</a></li>
+                            <li><a href="">船竿</a></li>
+                        </ul>
+                        <ul class="u2">
+                            <li><a href="">手竿</a></li>
+                            <li><a href="">海竿</a></li>
+                            <li><a href="">前打竿</a></li>
+                            <li><a href="">筏竿</a></li>
+                        </ul>
+                    </div>
+                    <div class="l-b">
+                        <a href=""><img src="images/f1-p.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="center">
+                    <dl class="tai js">
+                        <dt>台钓竿</dt>
+                        <dd>
+                            <div class="c-t">
+                                <div class="c-t-l">
+                                    <a href="">
+                                        <img src="images/f1-c-t-p1.jpg" alt="">
+                                        <p>光威竹山五代目鱼竿 正品3.6-7.2米37调碳素</p>
+                                        <span>￥198.00</span>
+                                    </a>
+                                </div>
+                                <div class="box banner3">
+                                    <a href="">
+                                        <img src="images/f1-B1.jpg" alt="">
+                                        <img src="images/f1-B2.jpg" alt="">
+                                        <img src="images/f1-B3.jpg" alt="">
+                                        <img src="images/f1-B4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="c-t-l">
+                                        <a href="">
+                                            <img src="images/f1-c-t-p2.jpg" alt="">
+                                            <p>光威银细峰鱼竿 正品渔具2.7-5.4米碳素台钓竿</p>
+                                            <span>￥165.00</span>
+                                        </a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p1.jpg" alt="">
+                                        <p>光威竹山三代目 正品吊具37调碳素综合竿经典</p>
+                                        <span>￥140.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p2.jpg" alt="">
+                                        <p>光威幻龙鲤二代鱼竿 正品渔具37硬调超轻鲤鱼</p>
+                                        <span>￥198.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p4.jpg" alt="">
+                                        <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                        <span>￥225.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p5.jpg" alt="">
+                                        <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                        <span>￥210.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="chuan js">
+                        <dt>传统手竿</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p1.jpg" alt="">
+                                        <p>光威竹山三代目 正品吊具37调碳素综合竿经典</p>
+                                        <span>￥140.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p2.jpg" alt="">
+                                        <p>光威幻龙鲤二代鱼竿 正品渔具37硬调超轻鲤鱼</p>
+                                        <span>￥198.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p4.jpg" alt="">
+                                        <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                        <span>￥225.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p5.jpg" alt="">
+                                        <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                        <span>￥210.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="luya js">
+                        <dt>路亚竿</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p1.jpg" alt="">
+                                        <p>光威竹山三代目 正品吊具37调碳素综合竿经典</p>
+                                        <span>￥140.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p2.jpg" alt="">
+                                        <p>光威幻龙鲤二代鱼竿 正品渔具37硬调超轻鲤鱼</p>
+                                        <span>￥198.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p4.jpg" alt="">
+                                        <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                        <span>￥225.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p5.jpg" alt="">
+                                        <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                        <span>￥210.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                        <a href="">
+                                            <img src="images/f1-c-b-p5.jpg" alt="">
+                                            <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                            <span>￥210.00</span>
+                                        </a>
+                                    </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="pao js">
+                        <dt>抛竿</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p1.jpg" alt="">
+                                        <p>光威竹山三代目 正品吊具37调碳素综合竿经典</p>
+                                        <span>￥140.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p2.jpg" alt="">
+                                        <p>光威幻龙鲤二代鱼竿 正品渔具37硬调超轻鲤鱼</p>
+                                        <span>￥198.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p4.jpg" alt="">
+                                        <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                        <span>￥225.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p5.jpg" alt="">
+                                        <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                        <span>￥210.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                        <a href="">
+                                            <img src="images/f1-c-b-p4.jpg" alt="">
+                                            <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                            <span>￥225.00</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/f1-c-b-p5.jpg" alt="">
+                                            <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                            <span>￥210.00</span>
+                                        </a>
+                                    </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="te js">
+                        <dt>特价鱼竿</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p1.jpg" alt="">
+                                        <p>光威竹山三代目 正品吊具37调碳素综合竿经典</p>
+                                        <span>￥140.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p2.jpg" alt="">
+                                        <p>光威幻龙鲤二代鱼竿 正品渔具37硬调超轻鲤鱼</p>
+                                        <span>￥198.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p4.jpg" alt="">
+                                        <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                        <span>￥225.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p5.jpg" alt="">
+                                        <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                        <span>￥210.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p4.jpg" alt="">
+                                        <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                        <span>￥225.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f1-c-b-p5.jpg" alt="">
+                                        <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                        <span>￥210.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <script>
+                    $(".js").find("dl").hover(function(){
+                        if(!($(this).is("tai"))){
+                            $(this).find("dt").css({
+                                color:"#556ecc",
+                                borderBottom:"#556ecc 2px solid"
+                            }).siblings("dd").css("display","block");
+                            $(this).siblings().find("dd").css({
+                                display:"none"
+                            })
+                            $(this).siblings("dl").find("dt").css({
+                                color:"#666",
+                                borderBottom:"#aaa 2px solid"
+                            })
+                        }
+                    },function(){
+                        $(this).siblings().find("dd").css("display","none")
+                    })
+                </script>
+                <div class="right">
+                    <div class="r-t">
+                        <a href="">并继竿</a>
+                        <a href="">长竿</a>
+                    </div>
+                    <div class="r-m">
+                        <ul>
+                            <li><a href=""><img src="images/f1-r-p1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f1-r-p2.png" alt=""></a></li>
+                            <li><a href=""><img src="images/f1-r-p3.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f1-r-p6.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f1-r-p7.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f1-r-p4.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f1-r-p5.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="r-b">
+                        <a href="">
+                            <img src="images/f1-r-p.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ocean">
+                <a href=""><img src="images/ocean1.jpg" alt=""></a>
+                <a href=""><img src="images/ocean2.jpg" alt=""></a>
+                <a href=""><img src="images/ocean3.jpg" alt=""></a>
+            </div>
+            <div class="F2 floor">
+                <div class="left">
+                    <div class="l-t">
+                        <img src="images/f2.jpg" alt="2F">
+                        <b>鱼线渔轮</b>
+                    </div>
+                    <div class="l-m">
+                        <ul class="u1">
+                            <li><a href="">尼龙线</a></li>
+                            <li><a href="">碳线</a></li>
+                        </ul>
+                        <ul class="u2">
+                            <li><a href="">大马力</a></li>
+                            <li><a href="">前导线</a></li>
+                        </ul>
+                    </div>
+                    <div class="l-b">
+                        <a href=""><img src="images/f2-p.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="center">
+                    <dl class="pe">
+                        <dt>PE线</dt>
+                        <dd>
+                            <div class="c-t">
+                                <div class="c-t-l">
+                                    <a href="">
+                                        <img src="images/f2-c-t-p1.jpg" alt="">
+                                        <p>大马力鱼线 蜘蛛耐磨损PE线劲线 海钓渔具</p>
+                                        <span>￥128.00</span>
+                                    </a>
+                                </div>
+                                <div class="box banner4">
+                                    <a href="">
+                                        <img src="images/f2-B1.jpg" alt="">
+                                        <img src="images/f2-B2.jpg" alt="">
+                                        <img src="images/f2-B3.jpg" alt="">
+                                        <img src="images/f2-B4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="c-t-l">
+                                        <a href="">
+                                            <img src="images/f2-c-t-p2.jpg" alt="">
+                                            <p>大马力鱼线 蜘蛛457米船钓PE线 进口渔具</p>
+                                            <span>￥438.00</span>
+                                        </a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p1.jpg" alt="">
+                                        <p>pe钓鱼线 Sufix梭飞士300米PE线五米一色</p>
+                                        <span>￥380.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p2.jpg" alt="">
+                                        <p>PE鱼线,蜘蛛pe钓线荧光蜘蛛侠 进口渔具</p>
+                                        <span>￥158.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p3.jpg" alt="">
+                                        <p>大马力编织线 蜘蛛极线沉水PE线 海钓渔具</p>
+                                        <span>￥178.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p4.jpg" alt="">
+                                        <p>鱼线pe线 贝克力水晶火线BFLF 进口渔具</p>
+                                        <span>￥138.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p5.jpg" alt="">
+                                        <p>大马力钓线 Rish3号-10号五彩大马力电线</p>
+                                        <span>￥26.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="ni">
+                        <dt>尼龙线</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p1.jpg" alt="">
+                                        <p>光威竹山三代目 正品吊具37调碳素综合竿经典</p>
+                                        <span>￥140.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p2.jpg" alt="">
+                                        <p>光威幻龙鲤二代鱼竿 正品渔具37硬调超轻鲤鱼</p>
+                                        <span>￥198.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p4.jpg" alt="">
+                                        <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                        <span>￥225.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p5.jpg" alt="">
+                                        <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                        <span>￥210.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="fang">
+                        <dt>纺车轮</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p1.jpg" alt="">
+                                        <p>光威竹山三代目 正品吊具37调碳素综合竿经典</p>
+                                        <span>￥140.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p2.jpg" alt="">
+                                        <p>光威幻龙鲤二代鱼竿 正品渔具37硬调超轻鲤鱼</p>
+                                        <span>￥198.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p4.jpg" alt="">
+                                        <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                        <span>￥225.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p5.jpg" alt="">
+                                        <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                        <span>￥210.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                        <a href="">
+                                            <img src="images/f2-c-b-p5.jpg" alt="">
+                                            <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                            <span>￥210.00</span>
+                                        </a>
+                                    </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="gu">
+                        <dt>鼓型轮</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p1.jpg" alt="">
+                                        <p>光威竹山三代目 正品吊具37调碳素综合竿经典</p>
+                                        <span>￥140.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p2.jpg" alt="">
+                                        <p>光威幻龙鲤二代鱼竿 正品渔具37硬调超轻鲤鱼</p>
+                                        <span>￥198.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p4.jpg" alt="">
+                                        <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                        <span>￥225.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p5.jpg" alt="">
+                                        <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                        <span>￥210.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                        <a href="">
+                                            <img src="images/f2-c-b-p4.jpg" alt="">
+                                            <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                            <span>￥225.00</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/f2-c-b-p5.jpg" alt="">
+                                            <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                            <span>￥210.00</span>
+                                        </a>
+                                    </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="te">
+                        <dt>特价鱼线</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p1.jpg" alt="">
+                                        <p>光威竹山三代目 正品吊具37调碳素综合竿经典</p>
+                                        <span>￥140.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p2.jpg" alt="">
+                                        <p>光威幻龙鲤二代鱼竿 正品渔具37硬调超轻鲤鱼</p>
+                                        <span>￥198.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p4.jpg" alt="">
+                                        <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                        <span>￥225.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p5.jpg" alt="">
+                                        <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                        <span>￥210.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p3.jpg" alt="">
+                                        <p>光威无法一本三代目 正品渔具3.6-6.3米超硬</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p4.jpg" alt="">
+                                        <p>光威海纹粹鱼竿 正品钓具3.6-7.2米超碳素28调</p>
+                                        <span>￥225.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f2-c-b-p5.jpg" alt="">
+                                        <p>光威云端鲤 正品渔具3.6米-7.2米超轻碳素台钓</p>
+                                        <span>￥210.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <script>
+                    $(".center").find("dl").hover(function(){
+                        if(!($(this).is("pe"))){
+                            $(this).find("dt").css({
+                                color:"#556ecc",
+                                borderBottom:"#556ecc 2px solid"
+                            }).siblings("dd").css("display","block");
+                            $(this).siblings().find("dd").css({
+                                display:"none"
+                            })
+                            $(this).siblings("dl").find("dt").css({
+                                color:"#666",
+                                borderBottom:"#aaa 2px solid"
+                            })
+                        }
+                    },function(){
+                        $(this).siblings().find("dd").css("display","none")
+                    })
+                </script>
+                <div class="right">
+                    <div class="r-t">
+                        <a href="">水滴轮</a>
+                        <a href="">鼓轮</a>
+                    </div>
+                    <div class="r-m">
+                        <ul>
+                            <li><a href=""><img src="images/f2-r-p1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f2-r-p2.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f2-r-p3.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f2-r-p6.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f2-r-p7.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f2-r-p4.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f2-r-p5.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="r-b">
+                        <a href="">
+                            <img src="images/f2-r-p.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="up">
+                <a href=""><img src="images/up1.jpg" alt=""></a>
+                <a href=""><img src="images/up2.jpg" alt=""></a>
+                <a href=""><img src="images/up3.jpg" alt=""></a>
+            </div>
+            <div class="F3 floor">
+                <div class="left">
+                    <div class="l-t">
+                        <img src="images/f3.jpg" alt="3F">
+                        <b>鱼钩鱼漂</b>
+                    </div>
+                    <div class="l-m">
+                        <ul class="u1">
+                            <li><a href="">台钓漂</a></li>
+                            <li><a href="">夜光漂</a></li>
+                            <li><a href="">阿波漂</a></li>
+                        </ul>
+                    </div>
+                    <div class="l-b">
+                        <a href=""><img src="images/f3-p.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="center">
+                    <dl class="jin">
+                        <dt>精品渔具</dt>
+                        <dd>
+                            <ul class="u">
+                                <li><a href=""><img src="images/f3-c-j1.jpg" alt="" class="i"></a></li>
+                                <li><a href=""><img src="images/f3-c-j2.jpg" alt=""></a></li>
+                            </ul>
+                            <div class="c p">
+                                <a href=""><img src="images/f3-c-j3.jpg" alt=""></a>
+                            </div>
+                            <ul class="u">
+                                <li><a href=""><img src="images/f3-c-j4.jpg" alt=""></a></li>
+                                <li><a href=""><img src="images/f3-c-j5.jpg" alt=""></a></li>
+                            </ul>
+                            <div class="c p">
+                                <a href=""><img src="images/f3-c-j6.jpg" alt=""></a>
+                            </div>
+                            <ul class="u">
+                                <li><a href=""><img src="images/f3-c-j7.jpg" alt=""></a></li>
+                                <li><a href=""><img src="images/f3-c-j8.jpg" alt=""></a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                        <script>
+                            $(".jin").find("img").hover(function(){
+                                $(this).stop().animate({
+                                    left:"-10px",
+                                    zIndex:999,
+                                    
+                                })
+                                $(this).parents(".jin").css({
+                                    flexDirection:"row"
+                                })
+                            },function(){
+                                $(this).stop().animate({
+                                    left:0
+                                })
+                            })
+                        </script>
+                    <dl class="tdg js">
+                        <dt>台钓钩</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t1.jpg" alt="">
+                                        <p>伊豆钩 摩利根渔具倒刺鱼钩C20 歪嘴鱼钩黑色</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t2.jpg" alt="">
+                                        <p>刚一针伊豆钩 光威有倒刺伊豆钩 1号2号3号</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t3.jpg" alt="">
+                                        <p>台钓子线袖钩 光威日本台钓子线袖钩 无倒刺</p>
+                                        <span>￥36.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t4.jpg" alt="">
+                                        <p>伊势尼成品双钩 光威伊势尼子线双钩烤漆有刺</p>
+                                        <span>￥36.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t5.jpg" alt="">
+                                        <p>伊豆子线双钩 光威进口伊豆鱼钩双钩烤漆 </p>
+                                        <span>￥12.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t6.jpg" alt="">
+                                        <p>伊势尼鱼钩套装 3-12#管付伊势尼有倒刺</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t7.jpg" alt="">
+                                        <p>伊势尼鱼钩套装 3-12#管付伊势尼有倒刺</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t8.jpg" alt="">
+                                        <p>带孔鱼钩 管付钩3#-16#带环有倒刺伊势尼</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t9.jpg" alt="">
+                                        <p>长柄鱼钩 摩利根渔具有刺长柄鱼钩黑狐</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t10.jpg" alt="">
+                                        <p>千又鱼钩 茉莉更渔具鱼钩二段尖头歪嘴钩</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="lyg js">
+                        <dt>路亚钩</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t1.jpg" alt="">
+                                        <p>伊豆钩 摩利根渔具倒刺鱼钩C20 歪嘴鱼钩黑色</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t2.jpg" alt="">
+                                        <p>刚一针伊豆钩 光威有倒刺伊豆钩 1号2号3号</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t3.jpg" alt="">
+                                        <p>台钓子线袖钩 光威日本台钓子线袖钩 无倒刺</p>
+                                        <span>￥36.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t4.jpg" alt="">
+                                        <p>伊势尼成品双钩 光威伊势尼子线双钩烤漆有刺</p>
+                                        <span>￥36.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t5.jpg" alt="">
+                                        <p>伊豆子线双钩 光威进口伊豆鱼钩双钩烤漆 </p>
+                                        <span>￥12.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t6.jpg" alt="">
+                                        <p>伊势尼鱼钩套装 3-12#管付伊势尼有倒刺</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t7.jpg" alt="">
+                                        <p>伊势尼鱼钩套装 3-12#管付伊势尼有倒刺</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t8.jpg" alt="">
+                                        <p>带孔鱼钩 管付钩3#-16#带环有倒刺伊势尼</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t9.jpg" alt="">
+                                        <p>长柄鱼钩 摩利根渔具有刺长柄鱼钩黑狐</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t10.jpg" alt="">
+                                        <p>千又鱼钩 茉莉更渔具鱼钩二段尖头歪嘴钩</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="tdp js">
+                        <dt>台钓漂</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t1.jpg" alt="">
+                                        <p>伊豆钩 摩利根渔具倒刺鱼钩C20 歪嘴鱼钩黑色</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t2.jpg" alt="">
+                                        <p>刚一针伊豆钩 光威有倒刺伊豆钩 1号2号3号</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t3.jpg" alt="">
+                                        <p>台钓子线袖钩 光威日本台钓子线袖钩 无倒刺</p>
+                                        <span>￥36.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t4.jpg" alt="">
+                                        <p>伊势尼成品双钩 光威伊势尼子线双钩烤漆有刺</p>
+                                        <span>￥36.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t5.jpg" alt="">
+                                        <p>伊豆子线双钩 光威进口伊豆鱼钩双钩烤漆 </p>
+                                        <span>￥12.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t6.jpg" alt="">
+                                        <p>伊势尼鱼钩套装 3-12#管付伊势尼有倒刺</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t7.jpg" alt="">
+                                        <p>伊势尼鱼钩套装 3-12#管付伊势尼有倒刺</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t8.jpg" alt="">
+                                        <p>带孔鱼钩 管付钩3#-16#带环有倒刺伊势尼</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t9.jpg" alt="">
+                                        <p>长柄鱼钩 摩利根渔具有刺长柄鱼钩黑狐</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li> -->
+                                <!-- <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t10.jpg" alt="">
+                                        <p>千又鱼钩 茉莉更渔具鱼钩二段尖头歪嘴钩</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="ydp js">
+                        <dt>夜钓漂</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t1.jpg" alt="">
+                                        <p>伊豆钩 摩利根渔具倒刺鱼钩C20 歪嘴鱼钩黑色</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t2.jpg" alt="">
+                                        <p>刚一针伊豆钩 光威有倒刺伊豆钩 1号2号3号</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t3.jpg" alt="">
+                                        <p>台钓子线袖钩 光威日本台钓子线袖钩 无倒刺</p>
+                                        <span>￥36.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t4.jpg" alt="">
+                                        <p>伊势尼成品双钩 光威伊势尼子线双钩烤漆有刺</p>
+                                        <span>￥36.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t5.jpg" alt="">
+                                        <p>伊豆子线双钩 光威进口伊豆鱼钩双钩烤漆 </p>
+                                        <span>￥12.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t6.jpg" alt="">
+                                        <p>伊势尼鱼钩套装 3-12#管付伊势尼有倒刺</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t7.jpg" alt="">
+                                        <p>伊势尼鱼钩套装 3-12#管付伊势尼有倒刺</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t8.jpg" alt="">
+                                        <p>带孔鱼钩 管付钩3#-16#带环有倒刺伊势尼</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li> -->
+                                <!-- <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t9.jpg" alt="">
+                                        <p>长柄鱼钩 摩利根渔具有刺长柄鱼钩黑狐</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f3-c-t10.jpg" alt="">
+                                        <p>千又鱼钩 茉莉更渔具鱼钩二段尖头歪嘴钩</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </dd>
+                    </dl>
+                    <script>
+                        $(".js").hover(function(){
+                            if(!($(this).is("jin"))){
+                                $(this).find("dt").css({
+                                    color:"#556ecc",
+                                    borderBottom:"#556ecc 2px solid"
+                                }).siblings("dd").css("display","block");
+                                $(this).siblings().find("dd").css({
+                                    display:"none"
+                                })
+                                $(this).siblings("dl").find("dt").css({
+                                    color:"#666",
+                                    borderBottom:"#aaa 2px solid"
+                                })
+                            }
+                        },function(){
+                            $(this).siblings().find("dd").css("display","none")
+                        })
+                    </script>
+                </div>
+                <div class="right">
+                    <div class="r-t">
+                        <a href="">袖钩</a>
+                        <a href="">爆炸钩</a>
+                    </div>
+                    <div class="r-m">
+                        <ul>
+                            <li><a href=""><img src="images/f3-r-p1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f3-r-p2.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f3-r-p3.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f3-r-p6.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f3-r-p7.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f3-r-p4.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f3-r-p5.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="r-b">
+                        <a href="">
+                            <img src="images/f3-r-p.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="F4 floor">
+                <div class="left">
+                    <div class="l-t">
+                        <img src="images/f4.jpg" alt="4F">
+                        <b>鱼饵</b>
+                    </div>
+                    <div class="l-m">
+                        <ul class="u1">
+                            <li><a href="">商品饵</a></li>
+                            <li><a href="">软饵</a></li>
+                            <li><a href="">套装饵</a></li>
+                        </ul>
+                        <ul class="u2">
+                            <li><a href="">小药</a></li>
+                            <li><a href="">硬饵</a></li>
+                        </ul>
+                    </div>
+                    <div class="l-b">
+                        <a href=""><img src="images/f4-p.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="center">
+                    <dl class="shang js">
+                        <dt>商品饵</dt>
+                        <dd>
+                            <div class="c-t">
+                                <div class="c-t-l">
+                                    <a href="">
+                                        <img src="images/f4-c-t-p1.jpg" alt="">
+                                        <p>爆炸钩饵料 喜来鱼爆炸钩商品饵料</p>
+                                        <span>￥7.50</span>
+                                    </a>
+                                </div>
+                                <div class="box banner5">
+                                    <a href="">
+                                        <img src="images/f4-B1.jpg" alt="">
+                                        <img src="images/f4-B2.jpg" alt="">
+                                        <img src="images/f4-B3.jpg" alt="">
+                                        <img src="images/f4-B4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="c-t-l">
+                                        <a href="">
+                                            <img src="images/f4-c-t-p2.jpg" alt="">
+                                            <p>罗飞饵料 喜来鱼颗粒饵罗非一号 黑坑钓罗非饵</p>
+                                            <span>￥7.00</span>
+                                        </a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-b-p1.jpg" alt="">
+                                        <p>野战蓝鲫X5 龙王恨野钓搓拉饵料鱼饵食300g</p>
+                                        <span>￥11.90</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-b-p2.jpg" alt="">
+                                        <p>经典鱼饵龙王恨野战蓝鲫300g 通杀鱼饵厂家</p>
+                                        <span>￥10.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="yao js">
+                        <dt>钓鱼小药</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p3.jpg" alt="">
+                                        <p>钓王一号小药 飞羽喷雾钓鱼特效小药</p>
+                                        <span>￥39.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p4.jpg" alt="">
+                                        <p>进口诱鱼配方 飞羽钓鱼小药战鲫狂鲤50ml</p>
+                                        <span>￥29.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p5.jpg" alt="">
+                                        <p>钓鱼宝小药 飞羽喷剂钓鱼小药</p>
+                                        <span>￥32.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p6.jpg" alt="">
+                                        <p>聚鱼素 飞羽钓鱼小药聚鱼素</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p7.jpg" alt="">
+                                        <p>固体增氧片 飞羽水库固体增氧片</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p8.jpg" alt="">
+                                        <p>鱼饵添加剂 飞羽鱼饵添加剂小药丁香诱 麝香王</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="ruan js">
+                        <dt>软饵</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p3.jpg" alt="">
+                                        <p>钓王一号小药 飞羽喷雾钓鱼特效小药</p>
+                                        <span>￥39.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p4.jpg" alt="">
+                                        <p>进口诱鱼配方 飞羽钓鱼小药战鲫狂鲤50ml</p>
+                                        <span>￥29.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p5.jpg" alt="">
+                                        <p>钓鱼宝小药 飞羽喷剂钓鱼小药</p>
+                                        <span>￥32.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p6.jpg" alt="">
+                                        <p>聚鱼素 飞羽钓鱼小药聚鱼素</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p7.jpg" alt="">
+                                        <p>固体增氧片 飞羽水库固体增氧片</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p8.jpg" alt="">
+                                        <p>鱼饵添加剂 飞羽鱼饵添加剂小药丁香诱 麝香王</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p8.jpg" alt="">
+                                        <p>鱼饵添加剂 飞羽鱼饵添加剂小药丁香诱 麝香王</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="ying js">
+                        <dt>硬饵</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p3.jpg" alt="">
+                                        <p>钓王一号小药 飞羽喷雾钓鱼特效小药</p>
+                                        <span>￥39.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p4.jpg" alt="">
+                                        <p>进口诱鱼配方 飞羽钓鱼小药战鲫狂鲤50ml</p>
+                                        <span>￥29.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p5.jpg" alt="">
+                                        <p>钓鱼宝小药 飞羽喷剂钓鱼小药</p>
+                                        <span>￥32.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p6.jpg" alt="">
+                                        <p>聚鱼素 飞羽钓鱼小药聚鱼素</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p7.jpg" alt="">
+                                        <p>固体增氧片 飞羽水库固体增氧片</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p7.jpg" alt="">
+                                        <p>固体增氧片 飞羽水库固体增氧片</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p8.jpg" alt="">
+                                        <p>鱼饵添加剂 飞羽鱼饵添加剂小药丁香诱 麝香王</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p8.jpg" alt="">
+                                        <p>鱼饵添加剂 飞羽鱼饵添加剂小药丁香诱 麝香王</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="te js">
+                        <dt>特价鱼饵</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p3.jpg" alt="">
+                                        <p>钓王一号小药 飞羽喷雾钓鱼特效小药</p>
+                                        <span>￥39.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p4.jpg" alt="">
+                                        <p>进口诱鱼配方 飞羽钓鱼小药战鲫狂鲤50ml</p>
+                                        <span>￥29.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p5.jpg" alt="">
+                                        <p>钓鱼宝小药 飞羽喷剂钓鱼小药</p>
+                                        <span>￥32.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p6.jpg" alt="">
+                                        <p>聚鱼素 飞羽钓鱼小药聚鱼素</p>
+                                        <span>￥368.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p7.jpg" alt="">
+                                        <p>固体增氧片 飞羽水库固体增氧片</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p7.jpg" alt="">
+                                        <p>固体增氧片 飞羽水库固体增氧片</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p8.jpg" alt="">
+                                        <p>鱼饵添加剂 飞羽鱼饵添加剂小药丁香诱 麝香王</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p8.jpg" alt="">
+                                        <p>鱼饵添加剂 飞羽鱼饵添加剂小药丁香诱 麝香王</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f4-c-p8.jpg" alt="">
+                                        <p>鱼饵添加剂 飞羽鱼饵添加剂小药丁香诱 麝香王</p>
+                                        <span>￥6.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    
+                </div>
+                <script>
+                    $(".js").hover(function(){
+                        if(!($(this).is("shang"))){
+                            $(this).find("dt").css({
+                                color:"#556ecc",
+                                borderBottom:"#556ecc 2px solid"
+                            }).siblings("dd").css("display","block");
+                            $(this).siblings().find("dd").css({
+                                display:"none"
+                            })
+                            $(this).siblings("dl").find("dt").css({
+                                color:"#666",
+                                borderBottom:"#aaa 2px solid"
+                            })
+                        }
+                    },function(){
+                        $(this).siblings().find("dd").css("display","none")
+                    })
+                </script>
+                <div class="right">
+                    <div class="r-t">
+                        <a href="">路亚亮片</a>
+                        <a href="">路亚米诺</a>
+                    </div>
+                    <div class="r-m">
+                        <ul>
+                            <li><a href=""><img src="images/f4-r-p1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f4-r-p2.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f4-r-p3.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f4-r-p4.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f4-r-p5.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f4-r-p6.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="r-b">
+                        <a href="">
+                            <img src="images/f4-r-p.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="F5 floor">
+                <div class="left">
+                    <div class="l-t">
+                        <img src="images/f5.jpg" alt="5F">
+                        <b>配件工具</b>
+                    </div>
+                    <div class="l-m">
+                        <ul class="u1">
+                            <li><a href="">照明</a></li>
+                            <li><a href="">打窝船</a></li>
+                            <li><a href="">路亚钳</a></li>
+                            <li><a href="">脱钩器</a></li>
+                            <li><a href="">肚顶</a></li>
+                            <li><a href="">辅助工具</a></li>
+                        </ul>
+                        <ul class="u2">
+                            <li><a href="">探鱼器</a></li>
+                            <li><a href="">控鱼器</a></li>
+                            <li><a href="">绑钩器</a></li>
+                            <li><a href="">剪刀</a></li>
+                            <li><a href="">黄鳝钓具</a></li>
+                        </ul>
+                    </div>
+                    <div class="l-b">
+                        <a href=""><img src="images/f5-p.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="center">
+                    <dl class="lyq js">
+                        <dt>路亚钳</dt>
+                        <dd>
+                            <div class="c-t">
+                                <div class="c-t-l">
+                                    <a href="">
+                                        <img src="images/f5-c-t-p1.jpg" alt="">
+                                        <p>钓鱼钳,贝克力浮水路亚钓鱼钳BTHP6</p>
+                                        <span>￥118.00</span>
+                                    </a>
+                                </div>
+                                <div class="box banner6">
+                                    <a href="">
+                                        <img src="images/f5-B1.jpg" alt="">
+                                        <img src="images/f5-B2.jpg" alt="">
+                                        <img src="images/f5-B3.jpg" alt="">
+                                        <img src="images/f5-B4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="c-t-l">
+                                        <a href="">
+                                            <img src="images/f5-c-t-p2.jpg" alt="">
+                                            <p>钓鱼用的钳子 多功能铝合金路亚钳</p>
+                                            <span>￥68.00</span>
+                                        </a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p1.jpg" alt="">
+                                        <p>路亚海钓工具 诺比抗腐蚀航空铝钨钢刀片</p>
+                                        <span>￥105.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>防锈钓鱼钳子 爱路亚钛合金涂层路亚钳</p>
+                                        <span>￥69.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p3.jpg" alt="">
+                                        <p>剪钢丝的钳子 粼湖渔具双刃路亚钳多功能</p>
+                                        <span>￥118.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p4.jpg" alt="">
+                                        <p>迷你路亚钳 FRICHY便携式4.5英寸钓鱼钳</p>
+                                        <span>￥98.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="qz js">
+                        <dt>铅坠</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p1.jpg" alt="">
+                                        <p>路亚海钓工具 诺比抗腐蚀航空铝钨钢刀片</p>
+                                        <span>￥105.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>防锈钓鱼钳子 爱路亚钛合金涂层路亚钳</p>
+                                        <span>￥69.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p3.jpg" alt="">
+                                        <p>剪钢丝的钳子 粼湖渔具双刃路亚钳多功能</p>
+                                        <span>￥118.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p4.jpg" alt="">
+                                        <p>迷你路亚钳 FRICHY便携式4.5英寸钓鱼钳</p>
+                                        <span>￥98.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="xpj js">
+                        <dt>钓鱼小配件</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p1.jpg" alt="">
+                                        <p>路亚海钓工具 诺比抗腐蚀航空铝钨钢刀片</p>
+                                        <span>￥105.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>防锈钓鱼钳子 爱路亚钛合金涂层路亚钳</p>
+                                        <span>￥69.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p3.jpg" alt="">
+                                        <p>剪钢丝的钳子 粼湖渔具双刃路亚钳多功能</p>
+                                        <span>￥118.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p4.jpg" alt="">
+                                        <p>迷你路亚钳 FRICHY便携式4.5英寸钓鱼钳</p>
+                                        <span>￥98.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="pjh js">
+                        <dt>配件盒</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p1.jpg" alt="">
+                                        <p>路亚海钓工具 诺比抗腐蚀航空铝钨钢刀片</p>
+                                        <span>￥105.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>防锈钓鱼钳子 爱路亚钛合金涂层路亚钳</p>
+                                        <span>￥69.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p3.jpg" alt="">
+                                        <p>剪钢丝的钳子 粼湖渔具双刃路亚钳多功能</p>
+                                        <span>￥118.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p4.jpg" alt="">
+                                        <p>迷你路亚钳 FRICHY便携式4.5英寸钓鱼钳</p>
+                                        <span>￥98.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="gj js">
+                        <dt>钓鱼工具</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p1.jpg" alt="">
+                                        <p>路亚海钓工具 诺比抗腐蚀航空铝钨钢刀片</p>
+                                        <span>￥105.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>防锈钓鱼钳子 爱路亚钛合金涂层路亚钳</p>
+                                        <span>￥69.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p3.jpg" alt="">
+                                        <p>剪钢丝的钳子 粼湖渔具双刃路亚钳多功能</p>
+                                        <span>￥118.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p4.jpg" alt="">
+                                        <p>迷你路亚钳 FRICHY便携式4.5英寸钓鱼钳</p>
+                                        <span>￥98.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f5-c-b-p2.jpg" alt="">
+                                        <p>专业路亚钳 FRICHY航空铝合金8英寸</p>
+                                        <span>￥288.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>                       
+                </div>
+                <script>
+                    $(".js").hover(function(){
+                        if(!($(this).is("lyq"))){
+                            $(this).find("dt").css({
+                                color:"#556ecc",
+                                borderBottom:"#556ecc 2px solid"
+                            }).siblings("dd").css("display","block");
+                            $(this).siblings().find("dd").css({
+                                display:"none"
+                            })
+                            $(this).siblings("dl").find("dt").css({
+                                color:"#666",
+                                borderBottom:"#aaa 2px solid"
+                            })
+                        }
+                    },function(){
+                        $(this).siblings().find("dd").css("display","none")
+                    })
+                </script>
+                <div class="right">
+                    <div class="r-t">
+                        <a href="">太空豆</a>
+                        <a href="">八字环</a>
+                    </div>
+                    <div class="r-m">
+                        <ul>
+                            <li><a href=""><img src="images/f5-r-p1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f5-r-p3.png" alt=""></a></li>
+                            <li><a href=""><img src="images/f5-r-p2.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="r-b">
+                        <a href="">
+                            <img src="images/f5-r-p.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="F6 floor">
+                <div class="left">
+                    <div class="l-t">
+                        <img src="images/f6.jpg" alt="6F">
+                        <b>钓鱼装备</b>
+                    </div>
+                    <div class="l-m">
+                        <ul class="u1">
+                            <li><a href="">钓箱</a></li>
+                            <li><a href="">支架</a></li>
+                            <li><a href="">钓椅</a></li>
+                            <li><a href="">鱼护</a></li>
+                            <li><a href="">钓鱼桶</a></li>
+                        </ul>
+                        <ul class="u2">
+                            <li><a href="">钓箱配件</a></li>
+                            <li><a href="">钓具包</a></li>
+                            <li><a href="">钓台</a></li>
+                            <li><a href="">抄网</a></li>
+                            <li><a href="">太阳伞</a></li>
+                        </ul>
+                    </div>
+                    <div class="l-b">
+                        <a href=""><img src="images/f6-p.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="center">
+                    <dl class="yhyt js">
+                        <dt>鱼护鱼桶</dt>
+                        <dd>
+                            <div class="c-t">
+                                <div class="c-t-l">
+                                    <a href="">
+                                        <img src="images/f6-c-t-p1.jpg" alt="">
+                                        <p>拉杆式钓鱼桶 龙王恨多功能活鱼桶</p>
+                                        <span>￥339.00</span>
+                                    </a>
+                                </div>
+                                <div class="box banner7">
+                                    <a href="">
+                                        <img src="images/f6-B1.jpg" alt="">
+                                        <img src="images/f6-B2.jpg" alt="">
+                                        <img src="images/f6-B3.jpg" alt="">
+                                        <img src="images/f6-B4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="c-t-l">
+                                        <a href="">
+                                            <img src="images/f6-c-t-p2.jpg" alt="">
+                                            <p>防水鱼护包 环盛EVA一体成型便携加厚耐磨</p>
+                                            <span>￥28.00</span>
+                                        </a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p1.jpg" alt="">
+                                        <p>高档EVA水桶 佰格带隔层2.0厚度大容量钓鱼桶</p>
+                                        <span>￥168.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p2.jpg" alt="">
+                                        <p>折叠水桶 伯格带投鱼口高品质EVA钓鱼桶</p>
+                                        <span>￥65.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p3.png" alt="">
+                                        <p>加厚涂胶鱼护 龙王恨双圈竞技防挂黑坑鱼护</p>
+                                        <span>￥82.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p4.jpg" alt="">
+                                        <p>防挂鱼护 龙王恨2米-3米渔网兜装鱼袋</p>
+                                        <span>￥75.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="dydx js">
+                        <dt>钓椅钓箱</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p1.jpg" alt="">
+                                        <p>高档EVA水桶 佰格带隔层2.0厚度大容量钓鱼桶</p>
+                                        <span>￥168.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p2.jpg" alt="">
+                                        <p>折叠水桶 伯格带投鱼口高品质EVA钓鱼桶</p>
+                                        <span>￥65.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p3.png" alt="">
+                                        <p>加厚涂胶鱼护 龙王恨双圈竞技防挂黑坑鱼护</p>
+                                        <span>￥82.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p4.jpg" alt="">
+                                        <p>防挂鱼护 龙王恨2米-3米渔网兜装鱼袋</p>
+                                        <span>￥75.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="dycw js">
+                        <dt>钓鱼抄网</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p1.jpg" alt="">
+                                        <p>高档EVA水桶 佰格带隔层2.0厚度大容量钓鱼桶</p>
+                                        <span>￥168.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p2.jpg" alt="">
+                                        <p>折叠水桶 伯格带投鱼口高品质EVA钓鱼桶</p>
+                                        <span>￥65.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p3.png" alt="">
+                                        <p>加厚涂胶鱼护 龙王恨双圈竞技防挂黑坑鱼护</p>
+                                        <span>￥82.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p4.jpg" alt="">
+                                        <p>防挂鱼护 龙王恨2米-3米渔网兜装鱼袋</p>
+                                        <span>￥75.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="dyzj js">
+                        <dt>钓鱼支架</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p1.jpg" alt="">
+                                        <p>高档EVA水桶 佰格带隔层2.0厚度大容量钓鱼桶</p>
+                                        <span>￥168.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p2.jpg" alt="">
+                                        <p>折叠水桶 伯格带投鱼口高品质EVA钓鱼桶</p>
+                                        <span>￥65.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p3.png" alt="">
+                                        <p>加厚涂胶鱼护 龙王恨双圈竞技防挂黑坑鱼护</p>
+                                        <span>￥82.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p4.jpg" alt="">
+                                        <p>防挂鱼护 龙王恨2米-3米渔网兜装鱼袋</p>
+                                        <span>￥75.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="dyfs js">
+                        <dt>钓鱼服饰</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p1.jpg" alt="">
+                                        <p>高档EVA水桶 佰格带隔层2.0厚度大容量钓鱼桶</p>
+                                        <span>￥168.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p2.jpg" alt="">
+                                        <p>折叠水桶 伯格带投鱼口高品质EVA钓鱼桶</p>
+                                        <span>￥65.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p3.png" alt="">
+                                        <p>加厚涂胶鱼护 龙王恨双圈竞技防挂黑坑鱼护</p>
+                                        <span>￥82.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p4.jpg" alt="">
+                                        <p>防挂鱼护 龙王恨2米-3米渔网兜装鱼袋</p>
+                                        <span>￥75.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/f6-c-b-p5.jpg" alt="">
+                                        <p>精品拉杆鱼桶 金荣钓具eve拉杆活鱼桶</p>
+                                        <span>￥55.00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>                      
+                </div>
+                <script>
+                    $(".js").hover(function(){
+                        if(!($(this).is("yhyt"))){
+                            $(this).find("dt").css({
+                                color:"#556ecc",
+                                borderBottom:"#556ecc 2px solid"
+                            }).siblings("dd").css("display","block");
+                            $(this).siblings().find("dd").css({
+                                display:"none"
+                            })
+                            $(this).siblings("dl").find("dt").css({
+                                color:"#666",
+                                borderBottom:"#aaa 2px solid"
+                            })
+                        }
+                    },function(){
+                        $(this).siblings().find("dd").css("display","none")
+                    })
+                </script>
+                <div class="right">
+                    <div class="r-t">
+                        <a href="">钓鱼防晒服</a>
+                        <a href="">救生衣</a>
+                    </div>
+                    <div class="r-m">
+                        <ul>
+                            <li><a href=""><img src="images/f6-r-p1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f6-r-p2.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f6-r-p3.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/f6-r-p4.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="r-b">
+                        <a href="">
+                            <img src="images/f6-r-p.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- footer -->
+    <footer class="margin">
+        <div class="service">
+            <dl>
+                <dt>
+                    <i class="i1 bg"></i>
+                    <b>买家服务</b>
+                </dt>
+                <dd><a href="">我要省钱</a></dd>
+                <dd><a href="">我要赚钱</a></dd>
+                <dd><a href="">常见问题</a></dd>
+                <dd><a href="">在线客服</a></dd>
+            </dl>
+            <dl>
+                <dt>
+                    <i class="i2 bg"></i>
+                    <b>安心购买</b>
+                </dt>
+                <dd><a href="">渔具品牌</a></dd>
+                <dd><a href="">货到付款</a></dd>
+                <dd><a href="">15天退换</a></dd>
+                <dd><a href="">售后服务</a></dd>
+            </dl>
+            <dl>
+                <dt>
+                    <i class="i3 bg"></i>
+                    <b>付款方式</b>
+                </dt>
+                <dd><a href="">支付宝</a></dd>
+                <dd><a href="">移动支付</a></dd>
+                <dd><a href="">银行汇款</a></dd>
+                <dd><a href="">扫码支付</a></dd>
+            </dl>
+            <dl>
+                <dt>
+                    <i class="i4 bg"></i>
+                    <b>卖家服务</b>
+                </dt>
+                <dd><a href="">钓具加盟</a></dd>
+                <dd><a href="">加盟流程</a></dd>
+                <dd><a href="">问题解答</a></dd>
+                <dd><a href="">卖家客服</a></dd>
+            </dl>
+            <dl class="wechat">
+                <dd><a href=""><img src="images/weixin.jpg" alt=""></a></dd>
+            </dl>
+            <dl class="serve">
+                <dt>
+                    <img src="images/01.gif" alt="">
+                </dt>
+                <dd>
+                    <table>
+                        <tbody>
+
+                            <tr>
+                                <td>买家客服:</td>
+                                <td>
+                                    <a href=""><img src="images/qq.gif" alt=""></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>卖家客服:</td>
+                                <td>
+                                    <a href=""><img src="images/qq.gif" alt=""></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tel:0755-2561 1801</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">ymr@ymraaa.com</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+            </dl>
+        </div>
+        <div class="footer">
+            <p class="p1">
+                <a href="">首页</a>
+                <span>|</span>
+                <a href="">关于渔美人</a>
+                <span>|</span>
+                <a href="">联系渔美人</a>
+                <span>|</span>
+                <a href="">公告</a>
+                <span>|</span>
+                <a href="">口碑</a>
+                <span>|</span>
+                <a href="">品牌</a>
+                <span>|</span>
+                <a href="">批发</a>
+                <span>|</span>
+                <a href="">加盟</a>
+                <span>|</span>
+                <a href="">商城广告</a>
+                <span>|</span>
+                <a href="">用户反馈</a>
+            </p>
+            <p class="p2">
+                渔美人商城 www.ymraaa.com版权所有Copyright&copy;2014-2019
+                <a href="">粤ICP备07039193号-2</a>
+            </p>
+                <div class="observe">
+                    <a href=""><img src="images/1.jpg" alt=""></a>
+                    <a href=""><img src="images/2.jpg" alt=""></a>
+                    <a href=""><img src="images/3.jpg" alt=""></a>
+                    <a href=""><img src="images/4.jpg" alt=""></a>
+                </div>
+                <p class="p3">
+                    <b>友情链接：</b>
+                    <a href="">daiwa达亿瓦钓具</a>
+                    <span>|</span>
+                    <a href="">德岛渔轮</a>
+                    <span>|</span>
+                    <a href="">光威渔具</a>
+                    <span>|</span>
+                    <a href="">桃园渔具</a>
+                    <span>|</span>
+                    <a href="">一只鱼渔具</a>
+                    <span>|</span>
+                    <a href="">ryobi利优比渔具</a>
+                    <span>|</span>
+                    <a href="">戴家渔具</a>
+                    <span>|</span>
+                    <a href="">万聚王</a>
+                </p>
+                <p class="p4">
+                    <a href="">威恒渔具</a>
+                    <span>|</span>
+                    <a href="">佰格林休闲用品</a>
+                    <span>|</span>
+                    <a href="">飞羽鱼饵</a>
+                    <span>|</span>
+                    <a href="">珠海旅游攻略</a>
+                    <span>|</span>
+                    <a href="">阿拉丁渔具</a>
+                    <span>|</span>
+                    <a href="">shimano禧玛诺渔具</a>
+                    <span>|</span>
+                    <a href="">龙王恨渔具</a>
+                    <span>|</span>
+                    <a href="">雅奇探鱼器</a>
+                </p>
+        </div>
+    </footer>
+    
+<!-- Btns -->
+<section id="Btns">
+    <ul>
+        <li><img src="images/f1.jpg" alt=""></li>
+        <li><img src="images/f2.jpg" alt=""></li>
+        <li><img src="images/f3.jpg" alt=""></li>
+        <li><img src="images/f4.jpg" alt=""></li>
+        <li><img src="images/f5.jpg" alt=""></li>
+        <li><img src="images/f6.jpg" alt=""></li>
+    </ul>
+</section>
+<script>
+    $("#Btns").find("li").click(function(){
+        var index = $(this).index();
+        var iNowFloor = $(".floor").eq(index);
+        var t = iNowFloor.offset().top;
+        $("html").stop().animate({
+            scrollTop:t
+        })
+    })
+</script>
+<!-- javaScript -->
+<script src="jquery.banner.2.0.0.js"></script>
+<script src="js/banner.js"></script>
+</body>
+</html>
